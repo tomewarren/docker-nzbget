@@ -18,6 +18,7 @@ RUN \
 	python2 \
 	unrar \
 	ffmpeg \
+	git \
 	wget && \
  echo "**** install nzbget ****" && \
  mkdir -p \
