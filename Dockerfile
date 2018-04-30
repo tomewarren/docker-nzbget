@@ -9,7 +9,7 @@ LABEL maintainer="sparklyballs"
 # package version
 # (stable-download or testing-download)
 ARG NZBGET_BRANCH="stable-download"
-
+RUN apk add --update
 RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
@@ -19,7 +19,6 @@ RUN \
 	unrar \
 	ffmpeg \
 	git \
-	par2 \
 	wget && \
  echo "**** install nzbget ****" && \
  mkdir -p \
