@@ -9,7 +9,6 @@ LABEL maintainer="sparklyballs"
 # package version
 # (stable-download or testing-download)
 ARG NZBGET_BRANCH="stable-download"
-RUN apk add --update
 RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
