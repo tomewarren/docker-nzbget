@@ -46,9 +46,9 @@ cd par2cmdline &&\
 aclocal &&\
 automake --add-missing &&\
 autoconf &&\
-./configure && \
-make && \
-make install && \
+./configure &&\
+make  &&\
+make install  \
 
  echo "**** cleanup ****" && \
  rm -rf \
