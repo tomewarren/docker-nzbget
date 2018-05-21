@@ -40,15 +40,14 @@ RUN \
 	-e "s#\(ConfigTemplate=\).*#\1$\{AppDir\}/webui/nzbget.conf.template#g" \
  /defaults/nzbget.conf && \
 
-cd /tmp && \
-git clone https://github.com/Parchive/par2cmdline.git && \
-cd par2cmdline && \
-aclocal && \
-automake --add-missing && \
-autoconf && \
-./configure && \
-make  && \
-make install &&  \
+# git clone https://github.com/Parchive/par2cmdline.git && \
+#cd par2cmdline && \
+#aclocal && \
+#automake --add-missing && \
+#autoconf && \
+#./configure && \
+#make  && \
+#make install &&  \
 
  echo "**** cleanup ****" && \
  rm -rf \
